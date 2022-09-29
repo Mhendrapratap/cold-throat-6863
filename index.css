@@ -10,7 +10,7 @@ body{
     width: 97%;
     justify-content: space-between;
     background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 25px;
+    box-shadow: rgb(241, 235, 235) 0px 3px 20px;
     padding: 10px 20px;
 }
 #nav-container>a>img{
@@ -64,7 +64,6 @@ body{
 .carousel{
     overflow: hidden;
     max-width: 100%;
-    animation: slider 9s infinite linear;
 }
 .carousel .carousel_item,
 .carousel_item_visible{
@@ -75,12 +74,13 @@ body{
     display: none;
 }
 .carousel .carousel_item img{
+   
     max-width: 100%;
     height: 450px;
 }
 .carousel .carousel_item_visible{
     display:inline-block;
-    animation: fadeVisibility 0.5s;
+    animation: fadeVisibility 0.0s;
 }
 .carousel .carousel_action{
     display: flex;
@@ -117,27 +117,15 @@ body{
     }
     
 }
-/* @keyframes slider {
-    0% {
-    
-      }
-      50% {
-        top: 30px;
-        left: 20px;
-      }
-      50% {
-        top: 10px;
-      }
-      100% {
-        top: 0;
-      }
-} */
+
 #mid-1{
     margin-top: 25px;
 }
 
 #mid-1>h1{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 
+
+'Helvetica Neue', sans-serif;
     margin: auto;
     text-align: center;
     font-size: 36px;
