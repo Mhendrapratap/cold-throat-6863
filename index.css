@@ -1,14 +1,16 @@
 body{
     margin: 0px;
     padding: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
 }
 #nav-container{
-    position: fixed;
+    position:relative;
     display: flex;
-    width: 100%;
+    width: 97%;
     justify-content: space-between;
     background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 25px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 25px;
     padding: 10px 20px;
 }
 #nav-container>a>img{
@@ -56,13 +58,192 @@ body{
     display: flex;
     flex-direction: column;
     left: 0;
-    width: 150px;
+    width: 100px;
     background: white;
 }
-#slide-show>a>img{
-    margin: auto;
-    width:100% ;
+.carousel{
+    overflow: hidden;
+    max-width: 100%;
+    animation: slider 9s infinite linear;
+}
+.carousel .carousel_item,
+.carousel_item_visible{
+    display: visible;
+}
+.carousel .carousel_item,
+.carousel_item_hidden{
+    display: none;
+}
+.carousel .carousel_item img{
+    max-width: 100%;
+    height: 450px;
+}
+.carousel .carousel_item_visible{
+    display:inline-block;
+    animation: fadeVisibility 0.5s;
+}
+.carousel .carousel_action{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.carousel_action button {
+    display: flex;
+    border: 0px;
+    justify-content: center;
     align-items: center;
-    height: 500px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    font-size: 50px;
 }
 
+.carousel_action button:hover{
+    background-color: grey;
+    color: white;
+}
+@keyframes fadeVisibility{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform: opacity linear;
+    }
+    
+}
+/* @keyframes slider {
+    0% {
+    
+      }
+      50% {
+        top: 30px;
+        left: 20px;
+      }
+      50% {
+        top: 10px;
+      }
+      100% {
+        top: 0;
+      }
+} */
+#mid-1{
+    margin-top: 25px;
+}
+
+#mid-1>h1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: auto;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 400;
+    color:rgb(62, 60, 60);
+}
+#mid-1>h1>hr{
+    width: 400px;
+    margin: auto;
+    border: 1px solid #e5b95f;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.item-carousel{
+    height: 300px;
+    border: 1px solid red;
+}
+
+#subscription-container{
+    margin-top: 30px;
+}
+
+#subscription-container>h1{
+    margin: auto;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 400;
+    color:rgb(62, 60, 60);
+}
+#subscription-container>h1>hr{
+    width: 250px;
+    margin: auto;
+    border: 1px solid #e5b95f;
+    margin-top: 10px;
+}
+.subscription{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    width: 25%;
+    border: 2px solid  rgb(236, 232, 232);
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 70px;
+
+}
+.subscription>div{
+    line-height: 4px;
+    padding: 10px;
+    border-bottom: 2px solid  rgb(236, 232, 232);
+}
+.subscription>div:nth-child(3){
+    height: 200px;
+}
+.subscription>div:nth-child(3)>p{
+    font-weight: 500;
+    color: #e5b95f;
+}
+.subscription>div:nth-child(4){
+ background-color: #e5b95f;
+ padding: 15px 0px;
+}
+.subscription>div:nth-child(4)>button{
+ border: 1px solid white;
+ background-color:#e5b95f;
+ padding: 10px;
+ font-size: 15px;
+ font-weight: bold;
+ color: white;
+ width: 90%;
+ border-radius: 5px;
+}
+.subscription>div:nth-child(4)>button:hover{
+    color: rgb(51, 47, 47);
+    cursor: pointer;
+}
+#mid-2>div{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    gap: 20px;
+}
+#mid-2>h1{
+    margin: auto;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 400;
+    color:rgb(62, 60, 60);
+}
+
+#mid-2>h1>hr{
+    width: 250px;
+    margin: auto;
+    border: 1px solid #e5b95f;
+    margin-top: 10px;
+}
+#mid-2>div>div>img{
+    width: 100%;
+}
+#mid-2>div>div>img+p{
+    color: rgb(107, 104, 104);
+}
+#mid-2>div>div>img+p+p{
+    color: rgb(176, 173, 173);
+    font-weight: 600;
+    margin-top: -10px;
+}
