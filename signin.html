@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="signin.css">
+    <script src="https://kit.fontawesome.com/24c494a6b6.js"
+    crossorigin="anonymous">
+  </script>
+</head>
+<body>
+<!-- nav bar -->
+<nav>
+    <a href="#" class="logo">SUBSCRIBE NOW</a>
+    <a href="index.html">
+            <img src="https://cdn.shopify.com/s/files/1/0052/7551/6995/files/FABBAG-LOGO_ea6e4404-93c0-4f54-9efc-23e6960bf4d4_2048x.png?v=1662004919" alt="">
+        </a>
+        <ul>
+           <li class="icons"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+           <li class="icons"><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+           <li class="icons"><a href="#"><i class="fa-regular fa-circle-user"></i></a>
+              <ul>
+                <li id="language"><label for="">Language:</label>
+                        <a href="#">En</a>
+                        <a href="#">Fr</a>
+                </li>
+                <li><a href="#">Checkout</a></li>
+                <li><a href="signin.html">Sign In</a></li>
+                <li><a href="signup.html">Create An Account</a></li>
+              </ul>
+           </li>
+           <li class="icons"><a href=""><i class="fa-sharp fa-solid fa-cart-shopping"></i></a></li>
+        </ul>
+     </nav>
+
+<!--------------------------SingnUp ------------------------------>
+     <div class="singup-container">
+        <h1>Sign In</h1>
+        <form>
+        <div id="buttons-social">
+             <div>
+                <a href="#" class="fb btn">
+                  <i class="fa fa-facebook fa-fw"></i> Sign in with Facebook
+                </a>
+                <a href="#" class="google btn">
+                  <i class="fa fa-google fa-fw"></i> Sign in with Google
+                </a>
+              </div>
+        </div>
+             <div class="from-container">
+                <label for="email">Email Address <span>*</span></label>
+                <input id="email" type="email" name="username" placeholder="" required>
+                <label for="name">Password <span>*</span></label>
+                <input id="pass" type="password" name="password" placeholder="" required>
+            
+              </div>
+              <div class="btn-submit">
+                <input  id="btn-signin" onclick="userAunthication()" type="submit" value="Sign In">
+                <input  id="btn-createaccount" type="submit" onclick="openWindow()" value="Create An Account">
+              </div>
+        </form>
+    </div>
+<!------------------------- Footer --------------------------->
+<footer class="site-footer">
+    <div class="container-footer">
+          <div>
+           <p>INFORMATION</p>
+           <ul class="footer-links">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Associated Brands</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Collaborate with Fab Bag</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Returns & Refunds</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+           </ul>
+          </div>
+           <div class="col-xs-6 col-md-3">
+                 <p>CUSTOMER CARE</p>
+                 <p>Call : 022-6805-6010 
+                   (Monday to Friday : 9 AM - 7 PM).
+                   Mail : crew@fabbag.com</p>
+               </div>
+           <div>
+               <p>NEWSLETTER</p>
+               <p>Signup for the latest offers, updates and news</p>
+               <div><input type="email">
+               <button>SUBSCRIBE</button>
+               </div>
+           </div>
+       </div>
+   
+   <!------------------------------------bottom ---------------------------------->
+       <div class="container">
+               <div class="">
+                 <ul class="social-icons">
+                   <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                   <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                   <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+                   <li><a class="youtube" href="#"><i class="fa fa-youtube-play"></i></a></li>   
+                 </ul>
+               </div>
+               <div class="">
+                   <p class="copyright-text">Copyright © 2021 fabbag.com All rights reserved. 
+                   </p>
+                 </div>  
+           </div>
+     </footer>
+</body>
+<script src="signin.js"></script>
+</html>
