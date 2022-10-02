@@ -43,4 +43,5 @@ function moveToPrevSlide(){
     updateSlidePosition();
 }
 
+// slider testimonial
 
