@@ -15,7 +15,7 @@ This is a individual project where I have tried to clone a  of the website fabba
 </ul>
 
 <h2> Snippets</h2> 
-<p> Deployed Link: <a href="https://liicious.netlify.app/">Here </a> </p>
+<p> Deployed Link: <a href="jade-gingersnap-56edcc.netlify.app/">Here </a> </p>
 
 <h2>Authors </h2>
 <ul>
